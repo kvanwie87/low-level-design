@@ -21,7 +21,7 @@ public class StreamMethodReferenceOperator {
                 .map(Collection::stream) // This is the method reference operator, it creates a stream from the collection inside the Optional
                 .ifPresent(stream -> stream.forEach(System.out::println)); // This will print each element in the stream
 
-        // Another example is when you have n
+        // Another example is when you have a nested collection
         List<List<String>> nestedCollection = Arrays.asList(
                 Arrays.asList("a", "b"),
                 Arrays.asList("c", "d"),
