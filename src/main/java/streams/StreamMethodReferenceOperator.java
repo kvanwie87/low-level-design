@@ -27,6 +27,11 @@ public class StreamMethodReferenceOperator {
                 Arrays.asList("c", "d"),
                 Arrays.asList("e", "f")
         );
+        for(List<String> innerList : nestedCollection) {
+            for (String s : innerList) {
+                System.out.println(s);
+            }
+        }
         // You can use the method reference operator to create a stream from each collection inside the nested collection
         nestedCollection
                 .stream() // This creates a stream from the outer collection
